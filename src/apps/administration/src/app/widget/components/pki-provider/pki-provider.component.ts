@@ -50,7 +50,7 @@ export class DevityPKIProviderComponent implements OnInit {
     await this.keynoaService.delete(provider.id);
     this.isLoading = false;
 
-    await this.reload;
+    await this.reload();
   }
 
   openCAModal(): void {
